@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JP Gouws Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="top">
+        <div class="logo">
+          <i class="bx bxl-codepen"></i>
+          <span>MY PORTFOLIO</span>
+        </div>
+        <i class="bx bx-menu" id="btn"></i>
+      </div>
+      <div class="user">
+        <img class="user-img" src="images/treestare.jpg" alt="me" />
+        <div>
+          <p class="bold">JP Gouws</p>
+          <p id="admin">Admin</p>
+        </div>
+      </div>
+      <ul>
+        <li>
+          <a href="./index.html">
+            <i class="bx bxs-home"></i>
+            <span class="nav-item">Home</span>
+          </a>
+          <span class="tooltip">Home</span>
+        </li>
+        <li>
+          <a href="./about.html">
+            <i class="bx bxs-info-square"></i>
+            <span class="nav-item">About</span>
+          </a>
+          <span class="tooltip">About</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bxs-book"></i>
+            <span class="nav-item">Learning</span>
+          </a>
+          <span class="tooltip">Learning</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bxs-briefcase"></i>
+            <span class="nav-item">Projects</span>
+          </a>
+          <span class="tooltip">Projects</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bxs-phone"></i>
+            <span class="nav-item">Contact</span>
+          </a>
+          <span class="tooltip">Contact</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bxs-cog"></i>
+            <span class="nav-item">Settings</span>
+          </a>
+          <span class="tooltip">Settings</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="main-content">
+      <div class="container">
+        <h1>Hi I'm <a>JP Gouws</a></h1>
+        <div>
+          <p class="introduction">
+            I am a self taught <a>FRONT END DEVELOPER!</a> I am energetic and love
+            creating websites with CODE!
+            <p class="introduction2">It's <a>AMAZING</a> what you can do and achieve through coding!</p>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    let btn = document.querySelector("#btn");
+    let sidebar = document.querySelector(".sidebar");
+
+    btn.onclick = function () {
+      sidebar.classList.toggle("active");
+    };
+  </script>
+</html>
